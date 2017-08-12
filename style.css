@@ -652,11 +652,13 @@ section h3.section-subheading {
 }
 
 .profile-img {
+    border-radius: 2%   ;
+    height: 150px;
+    width: 150px;
+    margin-right: 10px;
     float: left;
-    padding-top: 5px;
-    padding-right: 25px;
-    padding-bottom: 3px;
 }
+
 
 section#contact {
     background-color: #222;
