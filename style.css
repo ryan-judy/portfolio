@@ -181,8 +181,9 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
     background-image: none;
     border-color: transparent;
-    background-color: red;
-    height: 69px;
+    background-color: transparent;
+    height: 60px;
+    box-shadow: none;
 }
 
 .navbar-default .navbar-brand {
@@ -242,35 +243,55 @@ fieldset[disabled] .btn-xl.active {
     background-color: #5f0b0b;
 }
 
-@media(min-width:768px) {
-    .navbar-default {
-        padding: 25px 0;
-        border: 0;
-        background-color: transparent;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
 
-    .navbar-default .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
+.navbar-shrink {
+    border-color: lightgray;
+    color: black;
+    background-color: #FCFCFC;
+        -webkit-box-shadow: 0px 5px 14px -2px rgba(0,0,0,0.30);
+  -moz-box-shadow: 0px 5px 14px -2px rgba(0,0,0,0.30);
+  box-shadow: 0px 5px 14px -2px rgba(0,0,0,0.30);
+  }
 
-    .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px;
-    }
+  .navbar-shrink .navbar-brand  {
+    font-size: 24px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #8f0909;
+    font-weight: bold;
+  }
 
-    .navbar-default.navbar-shrink {
-        padding: 10px 0;
-    }
 
-    .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
-}
+ .navbar.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+        .navbar.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: darkslategray;
+  }
+
+  .navbar.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+          .navbar.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #8f0909;
+  }
+
+  .navbar-shrink .nav li a  {
+    color: black;
+  }
+
+    .navbar-shrink .nav li a  {
+    color: black;
+  }
+      .navbar-shrink .nav li a:hover  {
+    color: #8f0909;
+  }
+
+        .navbar-shrink .nav li a:active  {
+    color: #8f0909;
+  }
+
+
+        .navbar-shrink .nav li a:focus  {
+    color: #8f0909;
+  }
 
 header {
     text-align: center;

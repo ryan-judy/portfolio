@@ -8,17 +8,14 @@ $(function() {
     });
 });
 
-$(document).on('scroll', function (e) {
-	if (document.body.scrollTop > 30) {
-		$('.navbar').css('background-color', '#751212');
-		$('.navbar').css('box-shadow', 'none');
-		$('.navbar-brand').css('color', 'white');
-	}
+  $(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
 
-	else{ 
-		$('.navbar').css('background-color', 'transparent');
-	}
-});
+      $(".navbar").addClass("navbar-shrink");
+    } else {
+      $(".navbar").removeClass("navbar-shrink");
+    }
+  });
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
